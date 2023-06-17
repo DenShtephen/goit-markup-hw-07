@@ -125,6 +125,22 @@
 }
 /**
   |============================
-  | 
+  | Section Footer Tabl
   |============================
 */
+.footer {
+  padding-left: 108px;
+}
+.footer .container {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-wrapper {
+  margin-right: 24px;
+}
+.form-footer-text {
+  margin-top: 72px;
+}
+.media-footer-wrapper {
+  margin-left: 0;
+}

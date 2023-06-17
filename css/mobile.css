@@ -201,15 +201,22 @@
 */
 .footer .container {
   flex-direction: column;
+  align-items: center;
 }
 .footer-wrapper {
   padding-bottom: 72px;
 }
+
 .form-footer {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  flex-direction: column;
+}
+.footer-wrapper {
+  margin-right: 0;
+}
+.media-footer-wrapper {
+  margin-left: 0;
 }
 .footer-link {
   display: block;
@@ -223,6 +230,10 @@
 }
 .form-footer-text {
   text-align: center;
+}
+.form-footer-input {
+  width: 398px;
+  opacity: 0.3;
 }
 /**
   |============================
