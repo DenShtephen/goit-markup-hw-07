@@ -1,0 +1,130 @@
+.container {
+  width: 768px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**
+  |============================
+  | Header Tabl
+  |============================
+*/
+.btn-burger {
+  display: none;
+}
+.address-main {
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.link-adress {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+/**
+  |============================
+  | Hero Tabl
+  |============================
+*/
+.section-hero {
+  width: 768px;
+  height: 436px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(..//images/bg-header/hero-bg-tabl\ x1.jpg);
+  background-size: 768px 436px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-header/hero-bg-tabl\ x2.jpg);
+  }
+}
+.section-hero {
+  background-color: var(--navy-blue-color);
+  padding: 112px 0 112px;
+}
+.section-hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto 36px;
+}
+/**
+  |============================
+  | Main section Tabl
+  |============================
+*/
+.main-wrapper {
+  display: none;
+}
+.services {
+  width: calc((100% - 2 * 24px) / 2);
+}
+.main-services {
+  flex-wrap: wrap;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: left;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.section-text {
+  font-weight: 500;
+  padding-bottom: 72px;
+}
+/**
+  |============================
+  | Section Work Tabl
+  |============================
+*/
+.section-work {
+  display: none;
+}
+/**
+  |============================
+  | Team Section Tabl
+  |============================
+*/
+.card-set {
+  justify-content: center;
+}
+.card-set {
+  gap: 64px 24px;
+}
+/**
+  |============================
+  | Section Customers Tabl
+  |============================
+*/
+.section-customers {
+  padding: 96px 0 96px;
+}
+.customers {
+  gap: 72px 24px;
+  flex-wrap: wrap;
+}
+.customers-team {
+  width: calc((100% - 120px) / 3);
+  height: 88px;
+}
+/**
+  |============================
+  | 
+  |============================
+*/
