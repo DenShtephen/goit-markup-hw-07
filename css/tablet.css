@@ -1,16 +1,16 @@
 .container {
-  width: 768px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
 }
 /**
   |============================
   | Header Tabl
   |============================
 */
-.btn-burger {
+.main-link {
+  margin-right: 120px;
+}
+.menu-toggle {
   display: none;
 }
 .address-main {
@@ -120,7 +120,7 @@
   flex-wrap: wrap;
 }
 .customers-team {
-  width: calc((100% - 120px) / 3);
+  width: calc((100% - 120px) / 2);
   height: 88px;
 }
 /**
@@ -143,4 +143,29 @@
 }
 .media-footer-wrapper {
   margin-left: 0;
+}
+.form-footer-input {
+  opacity: 0.3;
+}
+/**
+  |============================
+  | Modal Tabl
+  |============================
+*/
+.modal {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%) translateY(-50%);
+}
+/**
+  |============================
+  | Portfolio Tabl
+  |============================
+*/
+@media screen and (min-width: 768px) and (max-width: 1157.9px) {
+  .tumb-portfolio img {
+    width: 356px;
+  }
+}
+.card-set-portfolio {
+  row-gap: 72px;
 }

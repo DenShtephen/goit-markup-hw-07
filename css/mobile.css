@@ -1,4 +1,43 @@
+:root {
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey-color: #2e2f42;
+  --white-color: #ffffff;
+  --dairy-color: #fcfcfc;
+  /**
+      |============================
+      | Others
+      |============================
+    */
+  --indent: 24px;
+  --items: 3;
+  --transforn-form: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-mobile {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-blue-color);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.mobile-text {
+  margin-bottom: 40px;
+}
+.link-mobile:hover,
+.link-mobile:focus {
+  color: var(--ocean-color);
+}
 .menu-toggle {
+  margin-left: auto;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -13,7 +52,26 @@
   border-radius: 50%;
   outline: none;
 }
+.menu-toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  fill: var(--navy-blue-color);
+  border: 1px solid var(--cornflower-color);
+  background-color: white;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -29,10 +87,16 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 80px 40px 40px 35px;
+  background-color: white;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
 
   transform: translateX(100%);
@@ -51,19 +115,47 @@
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin-bottom: auto;
 }
+.mobile-contacts {
+  margin-bottom: 48px;
+}
+.mobile-link-phone {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 
-.mobile-menu {
+  color: var(--slate-color);
+  margin-bottom: 40px;
+}
+.mobile-link-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+.mobile-link-email:hover,
+.mobile-link-email:focus,
+.mobile-link-phone:hover,
+.mobile-link-phone:focus {
+  color: var(--ocean-color);
+}
+.mobile-socials {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-menu .link {
   display: block;
   padding: 10px;
   color: #fff;
   text-decoration: none;
 }
 .container {
-  width: 428px;
+  width: 432px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -83,9 +175,10 @@
 .nav-link.link {
   display: none;
 }
-.btn-burger {
+.menu-toggle {
+  display: block;
+  cursor: pointer;
   border: none;
-  background-color: transparent;
 }
 /**
   |============================
@@ -93,14 +186,18 @@
   |============================
 */
 .section-hero {
-  width: 428px;
+  width: 432px;
   height: 432px;
+
+  background-color: var(--navy-blue-color);
+  padding: 112px 0 112px;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-header/bg-hero-mob\ x1.jpg);
-  background-size: 428px 432px;
+  background-size: 432px 432px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -113,10 +210,6 @@
       ),
       url(../images/bg-header/bg-hero-mob\ x2.jpg);
   }
-}
-.section-hero {
-  background-color: var(--navy-blue-color);
-  padding: 112px 0 112px;
 }
 .section-hero-title {
   font-size: 36px;
@@ -235,8 +328,37 @@
   width: 398px;
   opacity: 0.3;
 }
+.form-footer-icon {
+  margin-right: 24px;
+  margin-left: 0;
+}
 /**
   |============================
   | Modal Tel
   |============================
 */
+
+.modal {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%) translateY(-50%);
+}
+/**
+  |============================
+  | Portfolio Tel
+  |============================
+*/
+
+.section-portfolio {
+  padding: 48px 0 48px;
+}
+.btn-container {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card-set-portfolio {
+  row-gap: 0;
+  justify-content: center;
+}
+.card-set-item {
+  margin-bottom: 48px;
+}

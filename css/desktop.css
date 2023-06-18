@@ -10,7 +10,7 @@
   | Header Desk
   |============================
 */
-.btn-burger {
+.menu-toggle {
   display: none;
 }
 .section-hero {
@@ -33,5 +33,15 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-header/bg-desk\ x2.jpg);
+  }
+}
+/**
+  |============================
+  | Portfolio Tabl
+  |============================
+*/
+@media screen and (min-width: 1158px) {
+  .tumb-portfolio img {
+    width: 360px;
   }
 }
