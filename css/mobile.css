@@ -32,12 +32,23 @@
 .mobile-text {
   margin-bottom: 40px;
 }
+.link-mobile {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-blue-color);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.mobile-text {
+  margin-bottom: 40px;
+}
 .link-mobile:hover,
 .link-mobile:focus {
   color: var(--ocean-color);
 }
 .menu-toggle {
-  margin-left: auto;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -94,9 +105,7 @@
   width: 100vw;
   height: 100vh;
   padding: 80px 40px 40px 35px;
-  background-color: white;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  background-color: #fff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -115,9 +124,10 @@
 }
 
 .mobile-menu {
-  list-style: none;
   margin-bottom: auto;
+  list-style: none;
 }
+
 .mobile-contacts {
   margin-bottom: 48px;
 }
@@ -155,7 +165,7 @@
   text-decoration: none;
 }
 .container {
-  width: 432px;
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -186,9 +196,6 @@
   |============================
 */
 .section-hero {
-  width: 432px;
-  height: 432px;
-
   background-color: var(--navy-blue-color);
   padding: 112px 0 112px;
 
@@ -325,7 +332,7 @@
   text-align: center;
 }
 .form-footer-input {
-  width: 398px;
+  width: 100%;
   opacity: 0.3;
 }
 .form-footer-icon {
