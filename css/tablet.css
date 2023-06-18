@@ -110,12 +110,10 @@
 */
 .card-set {
   justify-content: center;
-}
-/* .card-set-item {
-  width: calc((100% - 24px) / 2);
-} */
-.card-set {
   gap: 64px 24px;
+}
+.potrfolio-list {
+  width: calc((100% - 24px) / 2);
 }
 /**
   |============================
@@ -138,12 +136,10 @@
   | Section Footer Tabl
   |============================
 */
-.footer {
-  padding-left: 108px;
-}
 .footer .container {
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .footer-wrapper {
   margin-right: 24px;
