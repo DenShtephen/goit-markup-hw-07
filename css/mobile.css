@@ -179,10 +179,10 @@
 .header {
   padding: 24px 0;
 }
-.link-adress {
+address {
   display: none;
 }
-.nav-link.link {
+.nav-main {
   display: none;
 }
 .menu-toggle {
