@@ -4,7 +4,7 @@
   }
 }
 .container {
-  width: 768px;
+  max-width: 768px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -36,14 +36,11 @@
   |============================
 */
 .section-hero {
-  width: 768px;
-  height: 436px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-header/hero-bg-tabl-x1.jpg);
-  background-size: 768px 436px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -97,7 +94,6 @@
 }
 .section-text {
   font-weight: 500;
-  padding-bottom: 72px;
 }
 /**
   |============================

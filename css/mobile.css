@@ -104,7 +104,7 @@
 
   width: 100vw;
   height: 100vh;
-  padding: 80px 40px 40px 35px;
+  padding: 80px 35px 40px 40px;
   background-color: #fff;
   z-index: 999;
 
@@ -131,23 +131,24 @@
 .mobile-contacts {
   margin-bottom: 48px;
 }
-.mobile-link-phone {
+.mobile-link-phone,
+.mobile-link-email {
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
 
   color: var(--slate-color);
+}
+.mobile-link-phone {
   margin-bottom: 40px;
+  font-size: 36px;
 }
-.mobile-link-email {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--slate-color);
+@media screen and (max-width: 427.9px) {
+  .mobile-link-phone {
+    font-size: 24px;
+  }
 }
+
 .mobile-link-email:hover,
 .mobile-link-email:focus,
 .mobile-link-phone:hover,
@@ -204,7 +205,6 @@ address {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-header/bg-hero-mob-x1.jpg);
-  background-size: 428px 432px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -291,7 +291,7 @@ address {
   flex-wrap: wrap;
 }
 .customers-team {
-  width: calc((100% - 120px) / 2);
+  width: calc((100% - 24px) / 2);
   height: 88px;
 }
 /**
@@ -349,7 +349,6 @@ address {
   | Modal Tel
   |============================
 */
-
 .modal {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(-50%) translateY(-50%);
