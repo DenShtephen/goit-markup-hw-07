@@ -326,7 +326,7 @@ address {
   | Modal Tel
   |============================
 */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 426px) {
   .modal {
     width: 100%;
   }
