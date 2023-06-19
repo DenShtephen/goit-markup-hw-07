@@ -204,7 +204,7 @@ address {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg-header/bg-hero-mob\ x1.jpg);
-  background-size: 428px 432px;
+  background-size: 396px 432px;
 }
 
 @media (min-device-pixel-ratio: 2),
