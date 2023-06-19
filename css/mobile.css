@@ -327,8 +327,7 @@ address {
   |============================
 */
 .modal {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(-50%) translateY(-50%);
+  min-width: 392px;
 }
 /**
   |============================
