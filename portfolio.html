@@ -70,6 +70,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="burger-icon" width="32" height="22">
+            <use href="/images/modal.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -101,8 +111,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\Bankapp.jpg,
-                        images\Portfolio_sect\bank-2x.jpg
+                        images/Portfolio_sect/Bankapp.jpg 1x,
+                        images/Portfolio_sect/bank-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -132,8 +142,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\scancode.jpg,
-                        images\Portfolio_sect\payment-2x.jpg
+                        images/Portfolio_sect/scancode.jpg   1x,
+                        images/Portfolio_sect/payment-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -161,8 +171,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\laptop.jpg,
-                        images\Portfolio_sect\app-2x.jpg
+                        images/Portfolio_sect/laptop.jpg 1x,
+                        images/Portfolio_sect/app-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -191,8 +201,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\cardrive.jpg,
-                        images\Portfolio_sect\taxi-2x.jpg
+                        images/Portfolio_sect/cardrive.jpg 1x,
+                        images/Portfolio_sect/taxi-2x.jpg  2x
                       "
                       type="image/jpeg"
                     />
@@ -221,8 +231,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\nightphone.jpg,
-                        images\Portfolio_sect\screen-2x.jpg
+                        images/Portfolio_sect/nightphone.jpg 1x,
+                        images/Portfolio_sect/screen-2x.jpg  2x
                       "
                       type="image/jpeg"
                     />
@@ -252,8 +262,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\smile.jpg,
-                        images\Portfolio_sect\courses-2x.jpg
+                        images/Portfolio_sect/smile.jpg      1x,
+                        images/Portfolio_sect/courses-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -283,8 +293,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\teh.jpg,
-                        images\Portfolio_sect\instagram-2x.jpg
+                        images/Portfolio_sect/teh.jpg          1x,
+                        images/Portfolio_sect/instagram-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -315,8 +325,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\woomanveg.jpg,
-                        images\Portfolio_sect\organic-2x.jpg
+                        images/Portfolio_sect/woomanveg.jpg  1x,
+                        images/Portfolio_sect/organic-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -344,8 +354,8 @@
                   <picture>
                     <source
                       srcset="
-                        images\Portfolio_sect\cupcoffe.jpg,
-                        images\Portfolio_sect\coffee-2x.jpg
+                        images/Portfolio_sect/cupcoffe.jpg  1x,
+                        images/Portfolio_sect/coffee-2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
@@ -463,5 +473,100 @@
         </div>
       </div>
     </footer>
+
+    <!--Other-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-btn js-close-menu">
+        <svg class="mobile-icon" width="8" height="8">
+          <use href="./images/close-black.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-text">
+          <a href="./index.html" class="link-mobile">Studio</a>
+        </li>
+        <li class="mobile-text">
+          <a href="./portfolio.html" class="link-mobile">Portfolio</a>
+        </li>
+        <li class="mobile-text"><a href="" class="link-mobile">Contacts</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li>
+          <a class="list link mobile-link-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a
+            class="list link mobile-link-email"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li>
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Instagram Icon"
+          >
+            <svg class="icon-team" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+            >icons
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Twitter Icon"
+          >
+            <svg class="icon-team" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Facebook Icon"
+          >
+            <svg class="icon-team" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Linkedin Icon"
+          >
+            <svg class="icon-team" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

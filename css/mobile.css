@@ -165,7 +165,7 @@
   text-decoration: none;
 }
 .container {
-  width: 100%;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -203,8 +203,8 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-header/bg-hero-mob\ x1.jpg);
-  background-size: 396px 432px;
+    url(../images/bg-header/bg-hero-mob-x1.jpg);
+  background-size: 428px 432px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -215,7 +215,7 @@ address {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-header/bg-hero-mob\ x2.jpg);
+      url(../images/bg-header/bg-hero-mob-x2.jpg);
   }
 }
 .section-hero-title {
@@ -299,6 +299,9 @@ address {
   | Footer Tel
   |============================
 */
+.footer {
+  padding: 96px 0 96px;
+}
 .footer .container {
   flex-direction: column;
   align-items: center;
@@ -340,10 +343,6 @@ address {
 .form-footer-input {
   width: 100%;
   opacity: 0.3;
-}
-.form-footer-icon {
-  margin-right: 24px;
-  margin-left: 0;
 }
 /**
   |============================

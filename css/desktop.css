@@ -23,7 +23,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-header/bg-desk\ x1.jpg);
+    url(../images/bg-header/bg-desk-x1.jpg);
   background-size: 1440px 600px;
 }
 
@@ -35,7 +35,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-header/bg-desk\ x2.jpg);
+      url(../images/bg-header/bg-desk-x2.jpg);
   }
 }
 /**

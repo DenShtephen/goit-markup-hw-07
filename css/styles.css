@@ -195,7 +195,6 @@ img {
   |============================
 */
 .section {
-  background-color: #fff;
   padding: 120px 0 120px;
 }
 .main-services {
@@ -497,11 +496,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-left: 24px;
   background-color: var(--iris-color);
   border: none;
   border-radius: 4px;
