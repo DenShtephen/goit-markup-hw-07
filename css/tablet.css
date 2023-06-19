@@ -131,7 +131,7 @@
   flex-wrap: wrap;
 }
 .customers-team {
-  width: calc((100% - 120px) / 3);
+  width: calc((100% - 24px) / 4);
   height: 88px;
 }
 /**
