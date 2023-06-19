@@ -26,27 +26,10 @@
   line-height: 1.11;
   color: var(--navy-blue-color);
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   text-decoration: none;
 }
 .mobile-text {
   margin-bottom: 40px;
-}
-.link-mobile {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--navy-blue-color);
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-decoration: none;
-}
-.mobile-text {
-  margin-bottom: 40px;
-}
-.link-mobile:hover,
-.link-mobile:focus {
-  color: var(--ocean-color);
 }
 .menu-toggle {
   min-height: 40px;
@@ -372,4 +355,13 @@ address {
 }
 .card-set-item-portfolio {
   margin-bottom: 48px;
+}
+/**
+  |============================
+  | Other
+  |============================
+*/
+.is-active-mobile {
+  color: var(--ocean-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
