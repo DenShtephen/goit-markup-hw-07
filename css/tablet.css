@@ -111,12 +111,15 @@
 .section-team {
   padding: 96px 0 96px;
 }
+.section-team .container {
+  max-width: 552px;
+}
+.section-team-list {
+  width: calc((100% - 48px) / 2);
+}
 .card-set {
   justify-content: center;
   gap: 64px 24px;
-}
-.potrfolio-list {
-  width: calc((100% - 24px) / 2);
 }
 /**
   |============================
@@ -125,6 +128,10 @@
 */
 .section-customers {
   padding: 96px 0 96px;
+}
+.section-customers .container {
+  max-width: 552px;
+  padding: 0;
 }
 .customers {
   gap: 72px 24px;
@@ -145,7 +152,6 @@
 .footer .container {
   margin: 0 108px;
   flex-wrap: wrap;
-  align-items: center;
 }
 .footer-wrapper {
   margin-right: 24px;
