@@ -113,29 +113,25 @@
 .mobile-contacts {
   margin-bottom: 48px;
 }
-.mobile-link-phone,
-.mobile-link-email {
+.mobile-link-phone {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-
-  color: var(--slate-color);
-}
-.mobile-link-phone {
   margin-bottom: 40px;
   font-size: 36px;
+  color: var(--slate-color);
+}
+.mobile-link-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
 }
 @media screen and (max-width: 427.9px) {
   .mobile-link-phone {
     font-size: 24px;
   }
-}
-
-.mobile-link-email:hover,
-.mobile-link-email:focus,
-.mobile-link-phone:hover,
-.mobile-link-phone:focus {
-  color: var(--ocean-color);
 }
 .mobile-socials {
   display: flex;
