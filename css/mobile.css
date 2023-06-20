@@ -135,7 +135,7 @@
 }
 .mobile-socials {
   display: flex;
-  justify-content: space-between;
+  gap: 56px;
 }
 .mobile-menu .link {
   display: block;
@@ -149,6 +149,12 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 426px) {
+  .mobile-socials {
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 /**
   |============================
@@ -328,9 +334,10 @@ address {
 */
 @media screen and (max-width: 424px) {
   .modal {
-    width: 100%;
+    width: calc(100% - 18px);
   }
 }
+
 .modal-form-agreement {
   display: block;
   text-align: center;
